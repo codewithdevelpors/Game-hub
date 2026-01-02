@@ -1,0 +1,12 @@
+.border {
+  transition: box-shadow 0.3s ease;
+}
+
+.border:hover {
+  box-shadow:
+    0 0 5px #00bfff,
+    0 0 10px #00bfff,
+    0 0 15px #00bfff,
+    0 0 20px #00bfff;
+}
+

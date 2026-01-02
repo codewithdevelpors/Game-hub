@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import Header from './Components/Header/Header.js';
+import Card from './Components/Card/Card.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Header />
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh' }}>
+      <Card
+        image="https://via.placeholder.com/300x400"
+        name="Sample Game"
+        details="This is a sample game description. It includes details about the game."
+        downloadLink="https://example.com/download"
+      />
     </div>
+    </>
   );
 }
 
